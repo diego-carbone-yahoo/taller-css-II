@@ -19,5 +19,5 @@
     new_main.classList.add("wrapper");
     new_main.innerHTML = "<main>" + main.innerHTML + "</main><aside>" +aside.innerHTML + "</aside>";
     header.parentNode.insertBefore(new_main, header.nextSibling);
- 
+
  })();

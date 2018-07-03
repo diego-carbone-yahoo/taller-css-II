@@ -10,10 +10,19 @@
 </head>
 <body>
 
+	<div id="side">
+		<h2>Este div está posicionado fixed!</h2>
+		<p>Cuando clickeamos sobre la pestaña de la derecha se le agrega o se le quita una clase "open".</p>
+		<p>Hagamos que aparezca y desaparezca cada vez que hacemos click sobre él!</p>
+		<p>Ya que estamos, hagamos que la flechita apunte para el otro lado cuando el div esta abierto.</p>
+		<p>Tip: el ancho del div es de "300px", con "box-sizing: border-box"!</p>
+
+	</div>
+
     <header>
         <img src="logo-ninja.png" alt="logo">
 
-        <nav id="hamb" class="open">
+        <nav id="hamb">
             <span>Menú</span>
             <ul>
                 <li>
@@ -31,19 +40,19 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="http://op1.html">Opcion1</a>
+                    <a href="">Opcion1</a>
                 </li>
                 <li>
-                    <a href="http://op2.html">Opcion2</a>
+                    <a href="">Opcion2</a>
                 </li>
                 <li>
-                    <a href="http://op3.html">Opcion3</a>
+                    <a href="">Opcion3</a>
                 </li>
                 <li>
-                    <a href="http://op4.html">Opcion4</a>
+                    <a href="">Opcion4</a>
                 </li>         
                 <li>
-                    <a href="http://op5.html">Opcion5</a>
+                    <a href="">Opcion5</a>
                 </li>                         
             </ul>
         </nav>
@@ -55,11 +64,18 @@
     <main>
         <h1>Transform / Transition</h1>
         <section>
+			<h2>transform</h2>
+			<p>The transform CSS property lets you rotate, scale, skew, or translate a given element. This is achieved by modifying the coordinate space of the CSS visual formatting model.</p>
+			<p>Fuente: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transform (Mozilla)</a></p>
             
         </section>
 
         <section>
-            
+			<h2>transition</h2>
+			<p>The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay.</p>
+			<p><em>Sintaxis:</em></p>
+			<p>transition: margin-right 2s ease-in-out .5s;</p>
+			<p>Fuente: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">Transition (Mozilla)</a></p>
         </section>
     
     </main>
@@ -111,6 +127,8 @@
     
     </footer>
 
-    <script src="assets/f.js"></script>
+	<script src="assets/jquery.min.js"></script>
+	<script src="assets/f.js"></script>
+	<script src="assets/css-ii.js"></script>
 </body>
 </html>
