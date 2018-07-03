@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>El camino del desarrollador UI - Paso 2: CSS - Transform / Transition</title>
 	<link rel="stylesheet" href="assets/estilos.css">
-	<link rel="stylesheet" href="assets/tarea.css">
+    <link rel="stylesheet" href="assets/_tarea.css">
+    <link rel="stylesheet" href="assets/tarea.css">
 </head>
 <body>
 
@@ -63,7 +64,17 @@
 
     <main>
         <h1>Transform / Transition</h1>
-        <section>
+
+        <ul id="solapas">
+            <li>
+                <a href="">transform</a>
+            </li>
+            <li>
+                <a href="">transition</a>
+            </li>
+        </ul>
+
+        <section class="visible">
 			<h2>transform</h2>
 			<p>The transform CSS property lets you rotate, scale, skew, or translate a given element. This is achieved by modifying the coordinate space of the CSS visual formatting model.</p>
 			<p>Fuente: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">Transform (Mozilla)</a></p>
@@ -109,7 +120,6 @@
             
             <input type="checkbox" name="acepto" id="acepto"/>
             <label for="acepto">Acepto terminos y condiciones del camino Ninja UI</label>  
-                      
 
             <label for="masInfo">Quiero mas info!</label>
             <input type="submit" id="masInfo"/>

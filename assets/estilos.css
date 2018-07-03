@@ -183,16 +183,20 @@ main {
     padding: 30px 35px;
     box-sizing: border-box;
     vertical-align: top;
+    padding-bottom: 320px;
 }
 
-section, article {
+section {
     box-shadow: 3px 3px 10px #aaa;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 5px;
-    margin: 30px 0px;
+    margin: 0px 0px 30px;
     padding: 25px;
     background-color: #fff;
+    height: 250px;
+    position: absolute;
+    max-width: 600px;
 }
 
 section h2, section h3, article h2, article h3  {
@@ -206,6 +210,28 @@ section p, article p {
 
 section p:last-child, article p:last-child {
     margin-bottom: 0px;
+}
+
+#solapas {
+    margin-top: 30px;
+    position: relative;
+    top: 1px;
+    z-index: 100;
+}
+
+#solapas li {
+    list-style: none;
+    display: inline-block;
+}
+
+#solapas li a {
+    display: block;
+    background: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+    box-shadow: 3px -4px 8px #aaa;
+    text-decoration: none;
+    color: #333;
 }
 
 .wrapper {
@@ -288,21 +314,6 @@ section p:last-child, article p:last-child {
 	box-sizing: border-box;
 }
 
-#menu ul li a:after {
-    content: "";
-    width: 0px;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    left: 5px;
-    bottom: 10px;
-    transition: all .2s ease-in;
-}
-
-#menu ul li a:hover:after {
-    width: 65px;
-}
-
 #side {
 	position: fixed;
 	top: 220px;
@@ -341,3 +352,15 @@ section p:last-child, article p:last-child {
 #hamb.open li a {
 	transform-origin: right;
 }
+
+
+#menu ul li a:after {
+    content: "";
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+

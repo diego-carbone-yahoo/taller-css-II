@@ -54,3 +54,24 @@
 #menu.open {
 
 }
+
+
+/* Botones */
+
+#menu ul li a:after {
+    
+}
+
+#menu ul li a:hover:after {
+    
+}
+
+
+/* Sections */
+section {
+    
+}
+
+section.visible {
+    
+}
